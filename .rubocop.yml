@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 3.0.4
+  TargetRubyVersion: 3.0.x
   NewCops: enable
   Exclude:
     - "Guardfile"
