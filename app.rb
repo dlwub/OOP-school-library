@@ -63,7 +63,7 @@ class App
     puts 'Has parent permission? [y/n]'
     parent_permission = gets.chomp
     parent_permission = parent_permission == 'y'
-    student = Student.new(age, 'Student', @class, name, parent_permission)
+    student = Student.new(age, @class, 'Student', name, parent_permission)
     @people << student
   end
 

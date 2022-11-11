@@ -3,7 +3,8 @@ require './person'
 class Student < Person
   attr_accessor :classroom
 
-  def initialize(age, role = 'Student', classroom = '', name = 'Unknown', parent_permission = true)
+  def initialize(age, classroom, role = 'Student', name = 'Unknown', parent_permission = true) # rubocop:disable Style/OptionalBooleanParameter
+    @id = Random.rand(1..1000)
     super(age, role, name, parent_permission)
     @classroom = classroom
   end
