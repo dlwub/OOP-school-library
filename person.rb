@@ -9,7 +9,7 @@ class Person < Nameable
     @id = Random.rand(1...10_000)
     @role = role
     @name = name
-    @age = age    
+    @age = age
     @parent_permission = parent_permission
     @rentals = []
   end
